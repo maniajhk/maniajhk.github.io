@@ -5,6 +5,7 @@ html, body * {
   user-select: none; /* Standard syntax */
 }
 
+#welcom-screen,
 #error-screen {
   position: fixed;
   top: 0;
@@ -19,10 +20,12 @@ html, body * {
   color: #fff;
 }
 
+#welcom-screen,
 #error-screen {
   background-color: #d85184; /*#00a2ed;*/
 }
 
+#welcom-screen .no-record-found::before,
 #error-screen .no-record-found::before {
   font-family: 'Material Icons';
   content: 'sentiment_very_dissatisfied';
@@ -30,6 +33,17 @@ html, body * {
   text-align: center !important;
   font-size: 15em;
   /*color: #fff;*/
+}
+
+#welcom-screen .material-svg-bg {
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  background-color: none;
+  width: auto;
+  height: calc(50vh - 2em);
+  background-image: url('/static/images/svg/maniaj/sagittarius_wakuwaku.svg');
+  margin-bottom: -3em;
 }
 
 #error-screen .material-svg-bg {
