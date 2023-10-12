@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>迷日店 &#124; エラー</title>
+  <link rel="icon" href="/static/images/icons/sun/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap/5.0.2/bootstrap.min.css">
+  <!--link rel="stylesheet" type="text/css" href="/static/css/custom/base.css"-->
+  <!--link rel="stylesheet" type="text/css" href="/static/css/custom/layout.css"-->
+  <style>
+    html, body * {
+      pointer-events: none;
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+    }
+    #error-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1050; /*9999;*/
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .75);
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    #error-screen {
+      background-color: #d85184; /*#00a2ed;*/
+    }
+
+    #error-screen .no-record-found::before {
+      font-family: 'Material Icons';
+      content: 'sentiment_very_dissatisfied';
+      display: block;
+      text-align: center !important;
+      font-size: 15em;
+      /*color: #fff;*/
+    }
+
+    #error-screen .material-svg-bg {
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      background-position: center center;
+      background-color: none;
+      width: auto;
+      height: calc(50vh - 2em);
+      background-image: url('/static/images/svg/maniaj/sagittarius_bikkuri.svg');
+      margin-bottom: -3em;
+    }
+  </style>
+</head>
+<body>
+  <div id="error-screen">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="material-svg-bg"></div>
+          <h1 class="display-1 text-white text-center">アプリケーション エラー</h1>
+          <p class="display-5 text-white text-center">
+            アプリケーションでエラーが発生したため、ページを提供できませんでした。
+            あなたがアプリケーション所有者の場合は、ログで詳細を確認してください。
+            Heroku CLI から次のコマンドを使用してこれを行うことができます。
+          </p>
+          <p class="display-5 text-white text-center">heroku logs --tail</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--script type="text/javascript" src="/static/js/jquery/3.6.0/jquery-3.6.0.min.js"></script-->
+  <script type="text/javascript" src="/static/js/bootstrap/popper/2.9.2/popper.min.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap/5.0.2/bootstrap.min.js"></script>
+</body>
+</html>
