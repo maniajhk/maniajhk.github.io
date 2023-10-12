@@ -16,23 +16,29 @@
       <div class="row">
         <div class="col text-center">
           <div class="material-svg-bg"></div>
-          <h1>Application Error</h1>
+          <h1 class="display-4">
+            Application Error
+          </h1>
         </div>
       </div>
 
       <div class="row m-2">
         <div class="col">&nbsp;</div>
-        <div class="col-8 text-justify">
-          アプリケーションでエラーが発生したため、ページを提供できませんでした。
-          あなたがアプリケーション所有者の場合は、ログで詳細を確認してください。
-          Heroku CLI から次のコマンドを使用してこれを行うことができます。
+        <div class="col-8 display-6 text-justify">
+          <span class="display-6">
+            アプリケーションでエラーが発生したため、ページを提供できませんでした。
+            あなたがアプリケーション所有者の場合は、ログで詳細を確認してください。
+            Heroku CLI から次のコマンドを使用してこれを行うことができます。
+        </span>
         </div>
         <div class="col">&nbsp;</div>
       </div>
 
       <div class="row">
         <div class="col text-center">
-          <span class="badge badge-secondary">heroku logs <b class="text-danger">--tail</b></span>
+          <span class="display-6 badge alert-secondary">
+            heroku logs <b class="text-danger">--tail</b>
+          </span>
         </div>
       </div>
 
