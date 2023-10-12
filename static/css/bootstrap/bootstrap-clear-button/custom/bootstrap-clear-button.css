@@ -1,0 +1,38 @@
+.form-clear {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(256, 256, 256, .75);
+  color: rgba(0, 0, 0, .5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: .2em;
+  right: .2em;
+  z-index: 10;
+}
+
+.form-clear:hover {
+  background: rgba(256, 256, 256, 1);
+  color: rgba(256, 0, 0, .75);
+  cursor: pointer;
+}
+
+.form-clear.material-icons:before {
+  content: 'clear';
+}
+
+@media only screen and (max-width: 575.98px) {
+  .form-clear {
+    /*width: 30px;
+    height: 30px;*/
+    right: .425em;
+  }
+}
