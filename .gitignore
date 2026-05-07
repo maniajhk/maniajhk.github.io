@@ -1,0 +1,45 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+dump.rdb
+media/
+uploads/
+/staticfiles/
+
+# Environment
+.env
+.envu
+.venv
+env/
+venv/
+ENV/
+
+# Database SSL certificates
+*.pem
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Custom
+/backup/
+/dump/
+*_original.py
+dummy_order.json
+.restore
+latest.dump

@@ -42,7 +42,7 @@ html, body * {
   background-color: none;
   width: auto;
   height: calc(50vh - 2em);
-  background-image: url('/static/images/svg/maniaj/sagittarius_wakuwaku.svg');
+  background-image: url('/assets/images/svg/maniaj/sagittarius_wakuwaku.svg');
   margin-bottom: -3em;
 }
 
@@ -53,6 +53,6 @@ html, body * {
   background-color: none;
   width: auto;
   height: calc(50vh - 2em);
-  background-image: url('/static/images/svg/maniaj/sagittarius_bikkuri.svg');
+  background-image: url('/assets/images/svg/maniaj/sagittarius_bikkuri.svg');
   margin-bottom: -3em;
 }
