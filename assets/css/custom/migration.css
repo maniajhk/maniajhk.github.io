@@ -23,7 +23,7 @@ body {
     height: auto;
     object-fit: cover;   /* Tells the image to fill the space */
     /* If the whitespace is specifically at the bottom of the SVG: */
-    margin-bottom: -50px; /* Pulls the bottom up to hide the empty space */
+    margin-bottom: -5em; /* Pulls the bottom up to hide the empty space */
 }
 
 .new-brand-text { 
