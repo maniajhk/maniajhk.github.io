@@ -19,7 +19,7 @@ body {
 .logo-container img {
     /*height: calc(50vh - 2em); 
     width: auto;*/
-    width: 250px;        /* Make this larger to fill the crop area */
+    width: calc(100vw - 2em); /* Make this larger to fill the crop area */
     height: auto;
     object-fit: cover;   /* Tells the image to fill the space */
     /* If the whitespace is specifically at the bottom of the SVG: */
