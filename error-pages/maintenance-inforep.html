@@ -1,49 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>迷日店 &#124; エラー</title>
-  <script type="text/javascript">
-    if (window.top !== window.self) {
-        window.top.location.replace("https://info.maniaj.com");
-    } else {
-        window.location.replace("https://info.maniaj.com");
-    }
-  </script>
-  <link rel="icon" href="/assets/images/icons/sun/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap/5.0.2/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/custom/base.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/custom/style.css">
-</head>
 <body>
   <div id="error-screen">
     <div class="container">
-
       <div class="row">
         <div class="col text-center">
-          <div class="material-svg-bg"></div>
-          <h1 class="display-2">
-            Offline for Maintenance
-          </h1>
-        </div>
-      </div>
-
-      <div class="row m-2">
-        <div class="col">&nbsp;</div>
-        <div class="col-8 text-center">
-          <h2 class="fw-normal">
-            このアプリは現在メンテナンス中です。<br/>
-            後でもう一度確認してください。
+          <h1 class="display-2">We’ve Moved!</h1>
+          <h2 class="fw-normal mt-4">
+            迷日店は新しいURLに移転いたしました。<br/>
+            自動的に移動しない場合は、以下のボタンをクリックしてください。
           </h2>
+          <!-- The target="_top" is CRITICAL to break out of the Heroku frame -->
+          <a href="https://info.maniaj.com" target="_top" class="btn btn-primary btn-lg mt-4">
+            新しいサイトへ移動する
+          </a>
         </div>
-        <div class="col">&nbsp;</div>
       </div>
-
     </div>
   </div>
-  <script type="text/javascript" src="/assets/js/bootstrap/popper/2.9.2/popper.min.js"></script>
-  <script type="text/javascript" src="/assets/js/bootstrap/5.0.2/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    // Try the auto-redirect again, but the button above is your safety net
+    setTimeout(function() {
+        try {
+            window.top.location.href = "https://info.maniaj.com";
+        } catch (e) {
+            console.log("Auto-redirect blocked by browser security. User must click the button.");
+        }
+    }, 500);
+  </script>
 </body>
-</html>
