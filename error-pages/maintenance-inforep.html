@@ -13,32 +13,63 @@
 <body>
   <div id="error-screen">
     <div class="container">
+
       <div class="row">
         <div class="col text-center">
-          <h1 class="display-2">We’ve Moved!</h1>
-          <h2 class="fw-normal mt-4">
-            迷日店は新しいURLに移転いたしました。<br/>
-            自動的に移動しない場合は、以下のボタンをクリックしてください。
-          </h2>
-          <!-- The target="_top" is CRITICAL to break out of the Heroku frame -->
-          <a href="https://info.maniaj.com" target="_top" class="btn btn-primary btn-lg mt-4">
-            新しいサイトへ移動する
-          </a>
+          <div class="material-svg-bg"></div>
+          <h1 class="display-2">
+            Offline for Maintenance
+          </h1>
         </div>
       </div>
+
+      <div class="row m-2">
+        <div class="col">&nbsp;</div>
+        <div class="col-8 text-center">
+          <h2 class="fw-normal">
+            このアプリは現在メンテナンス中です。<br/>
+            後でもう一度確認してください。
+          </h2>
+        </div>
+        <div class="col">&nbsp;</div>
+      </div>
+
     </div>
   </div>
-
+  <script type="text/javascript" src="/assets/js/bootstrap/popper/2.9.2/popper.min.js"></script>
+  <script type="text/javascript" src="/assets/js/bootstrap/5.0.2/bootstrap.min.js"></script>
   <script type="text/javascript">
-    // Try the auto-redirect again, but the button above is your safety net
-    setTimeout(function() {
-        try {
-            window.top.location.href = "https://info.maniaj.com";
-        } catch (e) {
-            console.log("Auto-redirect blocked by browser security. User must click the button.");
-        }
-    }, 500);
+    document.addEventListener("DOMContentLoaded", function() {
+      // 1. Get the parent URL from the referrer
+      var parentUrl = document.referrer;
+      var targetDiv = document.querySelector('.material-svg-bg').parentNode;
+      var msgHeader = document.querySelector('h1.display-2');
+      var msgBody = document.querySelector('h2.fw-normal');
+
+      // 2. Check if the user was visiting the contact page
+      if (parentUrl.indexOf('/zh-zant/wholesale/') !== -1) {
+          // Change text for the contact page
+          msgHeader.innerHTML = "移転のお知らせ";
+          msgBody.innerHTML = "迷日店は新しいURLに移転いたしました。<br/>自動的に移動しない場合は、以下のボタンをクリックしてください。";
+          
+          // Add the button dynamically
+          var btn = document.createElement("a");
+          btn.href = "https://maniaj.com";
+          btn.target = "_top"; // CRITICAL: Breaks out of the iframe
+          btn.className = "btn btn-primary btn-lg mt-4";
+          btn.innerText = "新しいサイトへ移動する";
+          msgBody.parentNode.appendChild(btn);
+
+          // Optional: Auto-redirect after 3 seconds
+          setTimeout(function() {
+              window.top.location.href = "https://maniaj.com";
+          }, 3000);
+      } else {
+          // Keep the original maintenance message for other pages
+          msgHeader.innerHTML = "Offline for Maintenance";
+          msgBody.innerHTML = "このアプリは現在メンテナンス中です。<br/>後でもう一度確認してください。";
+      }
+    });
   </script>
 </body>
-
 </html>
