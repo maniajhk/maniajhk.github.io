@@ -44,7 +44,6 @@ html, body * {
   height: calc(50vh - 2em);
   background-image: url('/assets/images/svg/maniaj/sagittarius_wakuwaku.svg');
   margin-bottom: -3em;
-  pointer-events: none;
 }
 
 #error-screen .material-svg-bg {
@@ -56,5 +55,4 @@ html, body * {
   height: calc(50vh - 2em);
   background-image: url('/assets/images/svg/maniaj/sagittarius_bikkuri.svg');
   margin-bottom: -3em;
-  pointer-events: none;
 }
