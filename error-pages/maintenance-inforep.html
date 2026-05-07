@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>迷日店 &#124; エラー</title>
+  <script type="text/javascript">
+    // This breaks out of the Heroku iFrame and redirects the main window
+    if (window.top !== window.self) {
+        window.top.location.replace("https://info.maniaj.com");
+    } else {
+        window.location.replace("https://info.maniaj.com");
+    }
+  </script>
   <link rel="icon" href="/assets/images/icons/sun/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap/5.0.2/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/custom/base.css">
@@ -38,13 +46,5 @@
   </div>
   <script type="text/javascript" src="/assets/js/bootstrap/popper/2.9.2/popper.min.js"></script>
   <script type="text/javascript" src="/assets/js/bootstrap/5.0.2/bootstrap.min.js"></script>
-  <script type="text/javascript">
-    // This breaks out of the Heroku iFrame and redirects the main window
-    if (window.top !== window.self) {
-        window.top.location.replace("https://info.maniaj.com");
-    } else {
-        window.location.replace("https://info.maniaj.com");
-    }
-  </script>
 </body>
 </html>
