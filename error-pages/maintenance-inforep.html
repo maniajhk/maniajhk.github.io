@@ -1,49 +1,44 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>迷日店 | 移転のお知らせ</title>
-  <link rel="stylesheet" href="https://jsdelivr.net">
-  <style>
-    body { background-color: #f8f9fa; height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'Helvetica Neue', Arial, sans-serif; }
-    .migration-card { max-width: 600px; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); background: white; text-align: center; }
-    .new-brand-text { color: #0d6efd; font-weight: bold; }
-    .redirect-loader { border: 3px solid #f3f3f3; border-top: 3px solid #0d6efd; border-radius: 50%; width: 24px; height: 24px; animation: spin 1s linear infinite; display: inline-block; vertical-align: middle; margin-right: 10px; }
-    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-  </style>
-  <script type="text/javascript">
-    // Automatic attempt to break out of the Heroku frame
-    setTimeout(function() {
-      try {
-        window.top.location.replace("https://info.maniaj.com/wholesale");
-      } catch (e) {
-        console.log("Auto-redirect blocked by browser. User must click manually.");
-      }
-    }, 4000); // 4-second delay so they can read the message
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>迷日店 &#124; 移転のお知らせ</title>
+  <link rel="icon" href="/assets/images/icons/sun/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap/5.0.2/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom/base.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom/style.css">
 </head>
 <body>
-  <div class="migration-card">
-    <h1 class="mb-4">迷日店は新しくなりました</h1>
-    <p class="lead mb-4">
-      サービス向上のため、当サイトは新しいURLに移転いたしました。<br>
-      お手数ですが、ブックマークの変更をお願いいたします。
-    </p>
-    
-    <div class="p-4 mb-4 bg-light rounded">
-      <p class="mb-1 text-muted">新URL</p>
-      <h4 class="new-brand-text">https://info.maniaj.com/wholesale</h4>
-    </div>
+  <div id="error-screen">
+    <div class="container">
 
-    <!-- target="_top" is essential to escape the Heroku iframe -->
-    <a href="https://info.maniaj.com/wholesale" target="_top" class="btn btn-primary btn-lg px-5 py-3 shadow">
-      新しいサイトへ移動する
-    </a>
+      <div class="row">
+        <div class="col text-center">
+          <div class="material-svg-bg"></div>
+          <h1 class="display-2">
+            We've Moved!
+          </h1>
+        </div>
+      </div>
 
-    <div class="mt-4 text-muted small">
-      <div class="redirect-loader"></div> 自動的に移動しない場合は上記をクリックしてください
+      <div class="row m-2">
+        <div class="col">&nbsp;</div>
+        <div class="col-8 text-center">
+          <h2 class="fw-normal">
+            サービス向上のため、当サイトは新しいURLに移転いたしました。<br>
+            お手数ですが、ブックマークの変更をお願いいたします。
+          </h2>
+        </div>
+        <div class="col">
+            <a href="https://info.maniaj.com/wholesale" target="_top" class="btn btn-primary btn-lg px-5 py-3 shadow">新しいサイトへ移動する</a>
+        </div>
+      </div>
+
     </div>
   </div>
+  <script type="text/javascript" src="/assets/js/bootstrap/popper/2.9.2/popper.min.js"></script>
+  <script type="text/javascript" src="/assets/js/bootstrap/5.0.2/bootstrap.min.js"></script>
 </body>
 </html>
