@@ -9,21 +9,23 @@ body {
 .migration-card { 
     max-width: 600px; 
     width: 90%; 
+    max-height: 90%;
     padding: 40px; 
     border-radius: 20px; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
-    background: white; 
+    /*box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+    background: white; */
     text-align: center; 
 }
 
 .logo-container img {
-    /*height: calc(50vh - 2em); 
-    width: auto;*/
-    width: calc(100vw - 2em); /* Make this larger to fill the crop area */
-    height: auto;
-    object-fit: cover;   /* Tells the image to fill the space */
-    /* If the whitespace is specifically at the bottom of the SVG: */
-    margin-bottom: -5em; /* Pulls the bottom up to hide the empty space */
+    /*height: calc(50vh - 2em); */
+    width: auto;
+    object-fit: cover;
+    margin-bottom: -4em;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .new-brand-text { 
