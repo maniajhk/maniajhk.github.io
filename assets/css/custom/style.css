@@ -1,13 +1,15 @@
-body { 
+html,
+body {
     background-color: #d85184; /*#ee87ae;*/
     height: 100vh; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
+    font-family: 'Noto Sans JP', sans-serif; /*'Arial', 'Helvetica', 'Sans-Serif';*/
+    font-size: 13px;
 }
 
-#welcome-card,
-#error-card { 
+.message-card { 
     max-width: 600px; 
     width: 90%; 
     max-height: 90%;
@@ -18,11 +20,11 @@ body {
     text-align: center; 
 }
 
-#error-card h1 {
+.message-card h1 {
     font-size: 3rem;
 }
 
-#error-card .lead {
+.message-card .lead {
     font-size: 1.5em;
 }
 
@@ -43,11 +45,11 @@ body {
 }
 
 @media only screen and (max-width: 575.98px) {
-    #error-card h1 {
+    .message-card h1 {
         font-size: 2rem;
     }
     
-    #error-card .lead {
+    .message-card .lead {
         font-size: 1em;
     }
 
