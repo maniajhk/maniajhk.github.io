@@ -9,6 +9,7 @@ dump.rdb
 media/
 uploads/
 /staticfiles/
+/backup/
 
 # Environment
 .env
