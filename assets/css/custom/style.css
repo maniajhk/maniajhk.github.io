@@ -10,9 +10,9 @@ body {
 }
 
 .message-card { 
-    max-width: 600px; 
-    width: 90%; 
     max-height: 90%;
+    max-width: 640px; 
+    width: 90%; 
     padding: 40px; 
     border-radius: 20px; 
     /*box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
@@ -21,11 +21,12 @@ body {
 }
 
 .message-card h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 900;
 }
 
 .message-card .lead {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .logo-container img {
@@ -46,11 +47,11 @@ body {
 
 @media only screen and (max-width: 575.98px) {
     .message-card h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     
     .message-card .lead {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .logo-container img {
