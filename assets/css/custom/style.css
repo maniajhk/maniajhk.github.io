@@ -20,24 +20,30 @@ body {
     text-align: center; 
 }
 
-.message-card h1 {
-    font-size: 4rem;
-    font-weight: 900;
-}
-
-.message-card .lead {
-    font-size: 2em;
-}
-
-.logo-container img {
-    /*height: calc(50vh - 2em); */
-    width: auto;
-    object-fit: cover;
-    margin-bottom: -6em;
+.message-card > h1,
+.message-card > .lead,
+.message-card > .logo-container {
     pointer-events: none;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+}
+
+.message-card > h1 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.message-card > .lead {
+    font-size: 2em;
+    text-align: justify;
+}
+
+.message-card > .logo-container > img {
+    /*height: calc(50vh - 2em); */
+    width: auto;
+    object-fit: cover;
+    margin-bottom: -6em;
 }
 
 .new-brand-text { 
@@ -46,24 +52,24 @@ body {
     font-weight: bold; 
 }
 
-.new-brand-text a {
+.new-brand-text > a {
     text-decoration: none;
 }
 
-.new-brand-text a:hover {
+.new-brand-text > a:hover {
     text-decoration: underline;
 }
 
 @media only screen and (max-width: 575.98px) {
-    .message-card h1 {
+    .message-card > h1 {
         font-size: 3rem;
     }
     
-    .message-card .lead {
+    .message-card > .lead {
         font-size: 1.5em;
     }
 
-    .logo-container img {
+    .message-card > .logo-container > img {
         margin-bottom: -4em;
     }
 
