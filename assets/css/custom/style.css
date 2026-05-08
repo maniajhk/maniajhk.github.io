@@ -22,7 +22,7 @@ html, body * {
 
 #welcome-screen,
 #error-screen {
-  background-color: #d85184; /*#00a2ed;*/
+  background-color: #ee87ae; /*#00a2ed;*/
 }
 
 #welcome-screen .no-record-found::before,
