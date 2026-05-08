@@ -18,11 +18,19 @@ body {
     text-align: center; 
 }
 
+#error-card h1 {
+    font-size: 3rem;
+}
+
+#error-card .lead {
+    font-size: 1.5em;
+}
+
 .logo-container img {
     /*height: calc(50vh - 2em); */
     width: auto;
     object-fit: cover;
-    margin-bottom: -4em;
+    margin-bottom: -6em;
     pointer-events: none;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -32,4 +40,18 @@ body {
 .new-brand-text { 
     color: #0d6efd; 
     font-weight: bold; 
+}
+
+@media only screen and (max-width: 575.98px) {
+    #error-card h1 {
+        font-size: 2rem;
+    }
+    
+    #error-card .lead {
+        font-size: 1em;
+    }
+
+    .logo-container img {
+        margin-bottom: -4em;
+    }
 }
